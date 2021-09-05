@@ -1,0 +1,30 @@
+<div class='card mb-3' style='width: 600px;'>
+  <div class='row g-0'>
+    <div class='col-md-4'>
+      <img src={{flag}} alt={{name}} class='img-fluid rounded-start' />
+    </div>
+    <div class='col-md-8'>
+      <div class='card-body'>
+
+        <h1 class='card-title'>{{name}}</h1>
+
+        <p class='card-text'><b>Capital:</b> <span class='card-text'><small class='text-muted'>{{capital}}</small><span/></p>
+
+        <p class='card-text'><b>Population: </b><span class='card-text'><small
+              class='text-muted'
+            >{{population}}</small></></span></p>
+
+        <p class='card-text'><b>Languages:</b> </p>
+        {{#each languages}}
+        <ul>
+          <li><span class='card-text'><small
+              class='text-muted'
+            >{{this.name}}</small></></span>
+          </li>
+        </ul>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+
